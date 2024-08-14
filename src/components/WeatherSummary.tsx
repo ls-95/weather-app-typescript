@@ -3,7 +3,6 @@ import { WeatherEntry } from "./WeatherEntry";
 import { Weather, WeatherLocation } from "../model/Weather";
 import { readWeather, readForecast } from "../services/WeatherService";
 import "./WeatherSummary.scss";
-import { read } from "fs";
 
 interface WeatherSummaryProps {
   location: WeatherLocation | null;
