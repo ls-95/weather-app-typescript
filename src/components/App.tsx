@@ -3,6 +3,7 @@ import { LocationSearch } from "./LocationSearch";
 import { LocationTable } from "./LocationTable";
 import { WeatherLocation } from "../model/Weather";
 import { searchLocation } from "../services/WeatherService";
+import { WeatherSummary } from "./WeatherSummary";
 
 const App: FC = () => {
   const [currentLocation, setCurrentLocation] =
@@ -40,6 +41,7 @@ const App: FC = () => {
         current={currentLocation}
         onSelect={(location) => setCurrentLocation(location)}
       />
+      <WeatherSummary location={currentLocation} />
     </div>
   );
 };
